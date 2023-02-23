@@ -1,0 +1,22 @@
+
+
+<input type="text" #city><button (click)="getByCity(city.value)">Search Hotel</button>
+
+<div *ngFor="let h of allHotels">
+    <table>
+        <tr>
+            <td><img src="/assets/images/{{h.imageName}}" alt="Hotel image" width="120px" height="150px"> </td>
+            <td>
+           
+                <h2>{{h.hotelName}}</h2>
+                <p>{{h.city}}</p>
+                <p>{{h.address}}</p>
+                <p>{{h.description}}</p>
+            </td>
+            
+
+        </tr>
+    </table>
+    <button>View Details</button>
+        
+</div>
